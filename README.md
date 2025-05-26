@@ -105,7 +105,7 @@ Proses Pembersihan Data meliputi, Data ini digabungkan dengan file tourism_with_
 Berdasarkan hasil eksplorasi data yang telah dilakukan, beberapa insight yang dapat diperoleh adalah:
 - Kategori Wisata: Ada variasi yang jelas dalam jumlah destinasi wisata yang tersedia berdasarkan kategori. Ini memberi gambaran tentang jenis wisata yang lebih banyak diminati di Yogyakarta.
 
-gambar 1
+![gambar 1](https://github.com/user-attachments/assets/9599df4d-6230-46fd-a4b7-0e25dc683865)
 
 - Usia Pengunjung: Sebagian besar pengunjung berasal dari rentang usia tertentu, yang dapat membantu dalam menyesuaikan jenis rekomendasi destinasi berdasarkan segmen pasar usia.
 
