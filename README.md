@@ -109,16 +109,16 @@ Berdasarkan hasil eksplorasi data yang telah dilakukan, beberapa insight yang da
 
 - Usia Pengunjung: Sebagian besar pengunjung berasal dari rentang usia tertentu, yang dapat membantu dalam menyesuaikan jenis rekomendasi destinasi berdasarkan segmen pasar usia.
 
-gambar 2
-
+![gambar 2](https://github.com/user-attachments/assets/b247cfaa-e835-4dfd-b782-2110962307b2)
 
 - Harga Tiket: Rentang harga tiket sangat bervariasi, dengan beberapa destinasi menawarkan harga yang lebih terjangkau sementara destinasi lainnya memiliki harga premium, yang harus dianalisis lebih lanjut untuk memutuskan strategi harga.
 
-gambar 3
+![gambar 3](https://github.com/user-attachments/assets/5b90c836-2f36-4828-a565-811806f2d824)
 
 - Asal Kota Pengunjung: Mengetahui asal kota pengunjung dapat membantu dalam strategi pemasaran, mengingat kota mana yang paling banyak memberikan pengunjung ke Yogyakarta.
 
-gambar 4
+![gambar 4](https://github.com/user-attachments/assets/bfc214bd-ceb2-4158-89b4-847559619827)
+
 
 ## Data Preparation
 Berikut adalah teknik yang digunakan untuk mempersiapkan data dalam proyek sistem rekomendasi destinasi wisata di Yogyakarta:
@@ -162,7 +162,10 @@ Sebagai hasil dari model rekomendasi, sistem ini dapat memberikan Top-N Recommen
 * Kekurangan:
     - Sistem ini membutuhkan data pengguna dan rating yang cukup untuk menghasilkan rekomendasi yang baik. Jika data terbatas, kualitas rekomendasi akan berkurang.
 
-gambar top-N
+Hasil Prediksi menggunakan Top-N Recommendation
+
+![gambar 5](https://github.com/user-attachments/assets/be1f1784-d64f-44f1-982e-65152ce80590)
+
 
 ## Evaluation
 Pada bagian Evaluation, menjelaskan metrik evaluasi yang digunakan untuk menilai kinerja model sistem rekomendasi destinasi wisata di Yogyakarta. Menggunakan Root Mean Squared Error (RMSE) sebagai metrik evaluasi utama untuk menilai kualitas prediksi rating yang diberikan oleh model. Selain itu, juga menggunakan Binary Crossentropy sebagai fungsi loss dalam proses pelatihan.
@@ -183,4 +186,4 @@ Berikut adalah hasil evaluasi model:
 |:-----:|:-----:|:-----:|:-----:|:-----:|
 | 100 | 0.32 | 0.35 | 0.65 | 0.70 |
 
-gambar evaluasi
+![gambar 6](https://github.com/user-attachments/assets/d6f1a0ad-c773-491a-be6f-fa803e697d21)
