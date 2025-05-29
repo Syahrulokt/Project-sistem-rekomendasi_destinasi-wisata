@@ -40,7 +40,7 @@ import os
 
 Sumber data yang digunakan berasal dari dataset destinasi wisata yang dapat diakses melalui tautan berikut:
 
-https://drive.google.com/drive/folders/1sUwiu6j5hXXhoFW6GTsO4cuktdJNJZZn?usp=sharing
+https://www.kaggle.com/code/rafkaip/sistem-rekomendasi-destinasi-wisata-kota-bandung/input
 
 ##Dataset Info
 
