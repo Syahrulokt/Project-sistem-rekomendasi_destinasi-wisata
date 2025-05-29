@@ -27,7 +27,6 @@ Pernyataan masalah yang ada dalam proyek ini adalah sebagai berikut:
 2. Tidak adanya sistem yang dapat memanfaatkan data ulasan dan penilaian pengguna untuk memberikan rekomendasi yang personal. Wisatawan sering kali bergantung pada sumber informasi yang terbatas dan kurang tepat untuk memilih destinasi yang sesuai.
 3. Keberagaman jenis destinasi wisata di Yogyakarta, seperti wisata alam, budaya, kuliner, dan sejarah, membuat sulit bagi wisatawan untuk memilih tempat yang tepat tanpa informasi yang relevan dan terperinci yang dapat menyesuaikan dengan keinginan atau kebutuhan mereka.
 
-
 ### Goals
 
 Berdasarkan pernyataan masalah yang ada, berikut adalah tujuan proyek yang diharapkan dapat menyelesaikan masalah-masalah tersebut:
@@ -89,17 +88,20 @@ Proses Pembersihan Data meliputi, Data ini digabungkan dengan file tourism_with_
 - tourism_rating.csv: 10.000 baris data.
 
 ### Kondisi Data:
-- Missing Values: Terdapat beberapa nilai yang hilang dalam beberapa kolom, terutama pada kolom yang terkait dengan skor ulasan dan informasi pengguna.
-- Data Cleaning: Beberapa kolom numerik, seperti Price, disimpan dalam format string dengan simbol atau karakter yang tidak relevan (misalnya "$" atau ",") yang perlu diubah menjadi format numerik.
+- Tidak ada data duplikat.
+- Kolom Price mengandung variasi format dan simbol yang perlu dibersihkan.
+- Terdapat outlier pada Price, dengan beberapa destinasi wisata memiliki harga sangat tinggi yang perlu dianalisis lebih lanjut.
 
 ### Distribusi Data:
-- Price: Harga tiket atau biaya masuk destinasi wisata di Yogyakarta sangat bervariasi, dengan sebagian besar destinasi memiliki harga antara Rp 50.000 hingga Rp 200.000 per malam. Namun, ada beberapa destinasi dengan harga yang lebih tinggi, yang mungkin merupakan outlier.
-- Ratings: Distribusi rating juga bervariasi, dengan sebagian besar destinasi memiliki jumlah ulasan yang relatif sedikit, namun ada beberapa destinasi yang memiliki banyak ulasan (lebih dari 500 ulasan).
+- Price: Terdapat distribusi harga yang sangat bervariasi, dengan sebagian besar destinasi berkisar antara Rp 50.000 hingga Rp 200.000, namun beberapa destinasi memiliki harga lebih dari Rp 500.000 yang merupakan outlier.
+- Ratings: Sebagian besar destinasi memiliki rating antara 3 hingga 5, namun beberapa destinasi mendapat rating ekstrim, baik 1 maupun 5, yang perlu dianalisis lebih lanjut.
+- Time_Minutes: Kolom ini memiliki missing values pada 66 destinasi, yang menunjukkan bahwa estimasi waktu kunjungan tidak selalu tersedia.
 
 ### Masalah Umum pada Data:
-- Missing Values: Beberapa kolom memiliki nilai yang hilang, terutama pada kolom-kolom yang terkait dengan informasi ulasan dan host.
-- Data Format: Beberapa kolom numerik disimpan sebagai string dengan simbol seperti "$", ",", atau "%", yang perlu dibersihkan untuk analisis lebih lanjut.
-- Boolean Encoding: Beberapa kategori boolean disimpan dalam format string yang perlu diubah menjadi format numerik (0/1).
+- Missing Values: Terdapat nilai kosong pada kolom Time_Minutes pada file tourism_with_id.csv.
+- Variasi Format: Kolom Price mengandung simbol dan format yang perlu dibersihkan untuk analisis lebih lanjut.
+- Outlier: Terdapat nilai ekstrim pada Price dan Ratings, yang memerlukan pemeriksaan untuk menentukan apakah merupakan kesalahan atau bagian dari strategi.
+- Data Tidak Konsisten: Beberapa kolom memiliki inkonsistensi dalam pengkodean, terutama dalam kolom Category dan Price.
 
 ### Exploratory data analysis:
 Berdasarkan hasil eksplorasi data yang telah dilakukan, beberapa insight yang dapat diperoleh adalah:
@@ -119,6 +121,9 @@ Berdasarkan hasil eksplorasi data yang telah dilakukan, beberapa insight yang da
 
 ![gambar 4](https://github.com/user-attachments/assets/bfc214bd-ceb2-4158-89b4-847559619827)
 
+### Sumber dataset
+Sumber data yang digunakan berasal dari dataset destinasi wisata yang dapat diakses melalui tautan berikut: 
+[https://drive.google.com/drive/folders/1sUwiu6j5hXXhoFW6GTsO4cuktdJNJZZn?usp=sharing](https://drive.google.com/drive/folders/1sUwiu6j5hXXhoFW6GTsO4cuktdJNJZZn?usp=sharing)
 
 ## Data Preparation
 Berikut adalah teknik yang digunakan untuk mempersiapkan data dalam proyek sistem rekomendasi destinasi wisata di Yogyakarta:
