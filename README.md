@@ -123,7 +123,7 @@ Berdasarkan hasil eksplorasi data yang telah dilakukan, beberapa insight yang da
 
 ### Sumber dataset
 Sumber data yang digunakan berasal dari dataset destinasi wisata yang dapat diakses melalui tautan berikut: 
-[https://drive.google.com/drive/folders/1sUwiu6j5hXXhoFW6GTsO4cuktdJNJZZn?usp=sharing](https://drive.google.com/drive/folders/1sUwiu6j5hXXhoFW6GTsO4cuktdJNJZZn?usp=sharing)
+[https://www.kaggle.com/code/rafkaip/sistem-rekomendasi-destinasi-wisata-kota-bandung/input](https://www.kaggle.com/code/rafkaip/sistem-rekomendasi-destinasi-wisata-kota-bandung/input)
 
 ## Data Preparation
 Berikut adalah teknik yang digunakan untuk mempersiapkan data dalam proyek sistem rekomendasi destinasi wisata di Yogyakarta:
